@@ -1,0 +1,89 @@
+@import "spruce.less";
+
+hr {
+  color: @grayLighter;
+}
+
+.how-it-works h5,
+.listeron {
+  font-family: @cursiveFontFamily;
+}
+
+.masthead {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.jumbotron {
+  text-align: center;
+
+  h1, h2 {
+    font-weight: 900;
+  }
+
+  .sub-tagline {
+    font-family: @cursiveFontFamily;
+  }
+}
+
+.why-listeron,
+.pricing,
+.how-it-works {
+  .leader {
+    font-family: @cursiveFontFamily;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 26px;
+  }
+}
+
+.how-it-works p.lead {
+  font-family: @baseFontFamily;
+  color: @headingsColor;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.why-listeron {
+  .lead-email span {
+    font-weight: 900;
+  }
+
+  .intro {
+    font-weight: 900;
+    font-size: 1.1em;
+  }
+
+  .example {
+    padding: 5px 0;
+    color: @heroUnitLeadColor;
+    background-color: @heroUnitBackground;
+    .border-radius(6px);
+  }
+}
+
+.pricing {
+  table {
+    margin: 0 auto;
+
+    td, th {
+      padding: 5px;
+    }
+
+    .plan {
+      width: 200px;
+      text-align: center;
+    }
+
+    p.heading {
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  address, dt, dd {
+    display: inline;
+  }
+}
