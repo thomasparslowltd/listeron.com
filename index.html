@@ -220,10 +220,10 @@
               Create your list</a>
           </td>
           <td class='plan regular'>
-            <a class='btn btn-large not-ready'>Sign up</a>
+                <span class='btn btn-large not-ready'>Sign up</span>
           </td>
           <td class='plan premium'>
-            <a class='btn btn-large not-ready'>Sign up</a>
+            <span class='btn btn-large not-ready'>Sign up</span>
           </td>
         </tr>
         </tbody>
@@ -278,9 +278,8 @@
     title: "Coming soon!",
     placement: "top"
   });
-  mixpanel.track_links('.plan.regular .btn', 'Regular signup click');
-  mixpanel.track_links('.plan.premium .btn', 'Premium signup click');
-  mixpanel.track_links('.plan.free .btn', 'Free signup click');
+  $('.plan.regular .btn').click(function () { mixpanel.track('Regular signup click'); });
+  $('.plan.premium .btn').click(function () { mixpanel.track('Premium signup click'); });
 </script>
 
 </body>
