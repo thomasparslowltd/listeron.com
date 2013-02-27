@@ -278,6 +278,9 @@
     title: "Coming soon!",
     placement: "top"
   });
+  mixpanel.track_links('.plan.regular .btn', 'Regular signup click');
+  mixpanel.track_links('.plan.premium .btn', 'Premium signup click');
+  mixpanel.track_links('.plan.free .btn', 'Free signup click');
 </script>
 
 </body>
