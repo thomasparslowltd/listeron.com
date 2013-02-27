@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
 <!--
 <link rel="stylesheet/less" href="css/listeron.less" />
 <script type="text/javascript"> (less = window.less || {}).env =
@@ -61,7 +63,7 @@
       <div class='span4'>
         <p class='lead'>3. Start the discussion</p>
         <p>
-        Your <strong>listeron</strong> email address is ready. All emails sent 
+        Your <strong>listeron</strong> email address is ready. All emails sent
         to your-list-name@listeron.com get sent to everyone in your group.
         </p>
       </div>
@@ -218,10 +220,10 @@
               Create your list</a>
           </td>
           <td class='plan regular'>
-            <a href='#' class='btn btn-large not-ready'>Sign up</a>
+            <a class='btn btn-large not-ready'>Sign up</a>
           </td>
           <td class='plan premium'>
-            <a href='#' class='btn btn-large not-ready'>Sign up</a>
+            <a class='btn btn-large not-ready'>Sign up</a>
           </td>
         </tr>
         </tbody>
@@ -269,5 +271,14 @@
        mixpanel.init("5ec64a69e535d1c90bb57628fcee0992");
 </script>
 <!-- MIXPANEL -->
+
+<script>
+  $('.btn.not-ready').popover({
+    content: "Regular and Premium accounts coming soon. Sign up for a free account today!",
+    title: "Coming soon!",
+    placement: "top"
+  });
+</script>
+
 </body>
 </html>
