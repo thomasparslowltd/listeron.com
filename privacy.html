@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Listeron - group email lists</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<!--
+<link rel="stylesheet/less" href="css/listeron.less" />
+<script type="text/javascript"> (less = window.less || {}).env =
+'development';</script>
+<script src="javascripts/less.js"></script>
+-->
+<link rel="stylesheet" href="css/listeron.css" />
+
+<link rel="shortcut icon" href="http://static.listeron.com/favicon.ico"/>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class='container'>
+  <div class="masthead">
+    <ul class="nav nav-pills pull-right">
+      <li><a href="http://app.listeron.com/accounts/login/">Login</a></li>
+    </ul>
+    <h1 class='listeron'>listeron</h1>
+  </div>
+
+  <hr />
+
+  <div class='jumbotron'>
+    <div class='row'>
+      <h1>Privacy Policy</h1>
+    </div>
+  </div>
+
+  <ul>
+    <li>
+      We won't share your data with other companies or use it to
+      target ads to you or to profile you or anything like that.
+    </li>
+    <li>
+      We will share any data with law enforcement when requested if we
+      believe that we legally have to (sorry).
+    </li>
+    <li>
+      We do use external services like Google Analytics to see if,
+      when and how people are visiting the site.
+    </li>
+    <li>
+      If you have any questions, comments or want any clarification
+      please get in touch
+      at <a href="mailto:support@listeron.com">support@listeron.com</a>
+    </li>
+  </ul>
+
+  <hr />
+
+  <footer id='footer'>
+    <div class='row'>
+      <p>We'd love to hear your thoughts. Get in touch with us:
+      <dl>
+        <dt>Email:</dt>
+        <dd><a href="mailto:support@listeron.com">support@listeron.com</a><dd>
+        <dt>In person:</dt>
+        <dd>
+        <address>listeron.com, 6 Gloucester Street, Brighton, BN1 3EW,
+          UK</address>
+        </dd>
+      </dl>
+      </p>
+    </div>
+  </footer>
+
+</div>
+<!-- CLICKY -->
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100582995); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100582995ns.gif" /></p></noscript>
+<!-- CLICKY -->
+
+<!-- MIXPANEL -->
+<script type="text/javascript">
+(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+ b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+   '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+ d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+   var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+     Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+     f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+       'track_forms','register','register_once','unregister','identify','alias','name_tag',
+       'set_config','people.set','people.increment','people.track_charge','people.append'];
+       for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+       mixpanel.init("5ec64a69e535d1c90bb57628fcee0992");
+</script>
+<!-- MIXPANEL -->
+
+<script>
+  $('.btn.not-ready').popover({
+    content: "Regular and Premium accounts coming soon. Sign up for a free account today!",
+    title: "Coming soon!",
+    placement: "top"
+  });
+  $('.plan.regular .btn').click(function () { mixpanel.track('Regular signup click'); });
+  $('.plan.premium .btn').click(function () { mixpanel.track('Premium signup click'); });
+
+  mixpanel.track("View Home Page")
+</script>
+
+</body>
+</html>
